@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Saudi Plate Recognizer</h1>
+
+  <input type="file" accept="image/*" (change)="onFileSelected($event)">
+  
+  <div *ngIf="imageUrl">
+    <h2>Selected Image:</h2>
+    <img [src]="imageUrl" class="preview">
+  </div>
+
+  <div *ngIf="plateNumber">
+    <h2>Recognized Plate:</h2>
+    <p class="plate">{{ plateNumber }}</p>
+  </div>
+  <div *ngIf="error">
+    <h2>Recognized Plate:</h2>
+    <p class="error">{{ error }}</p>
+  </div>
+</div>

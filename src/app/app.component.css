@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.preview {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.plate {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
+
+.error {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(128, 0, 0);
+}
